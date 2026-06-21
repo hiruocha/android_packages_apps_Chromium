@@ -1,0 +1,19 @@
+android_app_import {
+	name: "Chromium",
+	owner: "google",
+    arch: {
+        arm: {
+            apk: "prebuilt/arm/ChromePublic.apk",
+        },
+        arm64: {
+            apk: "prebuilt/arm64/ChromePublic.apk",
+        },
+    },
+	overrides: ["Browser2", "Jelly"],
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
